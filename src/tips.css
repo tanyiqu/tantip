@@ -1,0 +1,58 @@
+body {
+  position: relative;
+  margin: 0;
+}
+.tan-tips {
+  position: fixed;
+  height: 340px;
+  top: calc(50% - 340px/2);
+  right: 0;
+  display: flex;
+  z-index: 9999;
+  cursor: pointer;
+}
+.tan-tips .tan-tips-show-btn {
+  width: 50px;
+  height: calc(340px / 2.7);
+  margin-top: calc(340px/2 - calc(340px / 2.7)/2);
+  background: purple;
+}
+.tan-tips .tan-tips-main {
+  width: 250px;
+  height: 340px;
+  background: #fff;
+  border: solid 1px #dbdbdb;
+  display: flex;
+  flex-direction: column;
+}
+.tan-tips .tan-tips-main .tan-tips-main-header {
+  overflow: hidden;
+  height: 25px;
+  background: #e7e7e7;
+}
+.tan-tips .tan-tips-main .tan-tips-main-header p {
+  line-height: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+.tan-tips .tan-tips-main .tan-tips-main-footer {
+  overflow: hidden;
+  height: 20px;
+  background: #e7e7e7;
+  padding-right: 12px;
+}
+.tan-tips .tan-tips-main .tan-tips-main-footer p {
+  line-height: 20px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+.tan-tips .tan-tips-main .tan-tips-main-footer p a {
+  text-decoration: none;
+}
+.tan-tips .tan-tips-main .tan-tips-main-content {
+  flex: 1;
+}

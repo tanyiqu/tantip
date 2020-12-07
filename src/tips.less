@@ -1,0 +1,83 @@
+body {
+    position: relative;
+    margin: 0;
+}
+
+
+@tipsMainWeight: 250px;
+@tipsMainHeight: 340px;
+
+@tipsBtnWeight: 50px;
+@tipsBtnHeight: calc(@tipsMainHeight / 2.7);
+
+
+
+.tan-tips {
+    position: fixed;
+    height: @tipsMainHeight;
+
+    top: calc(50% - @tipsMainHeight/2);
+    right: 0;
+    display: flex;
+
+    z-index: 9999;
+
+    cursor: pointer;
+
+    .tan-tips-show-btn {
+        width: @tipsBtnWeight;
+        height: @tipsBtnHeight;
+        margin-top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2);
+        background: purple;
+    }
+
+    .tan-tips-main {
+        // display: none;
+        width: @tipsMainWeight;
+        height: @tipsMainHeight;
+        background: #fff;
+        border: solid 1px #dbdbdb;
+        display: flex;
+        flex-direction: column;
+
+
+        .tan-tips-main-header {
+            overflow: hidden;
+            height: 25px;
+            background: #e7e7e7;
+
+            p {
+                line-height: 25px;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+            }
+        }
+
+        .tan-tips-main-footer {
+            overflow: hidden;
+            height: 20px;
+            background: #e7e7e7;
+            padding-right: 12px;
+
+            p {
+                line-height: 20px;
+                text-align: right;
+                margin: 0;
+                padding: 0;
+                font-size: 13px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .tan-tips-main-content {
+            flex: 1;
+        }
+
+
+    }
+}
