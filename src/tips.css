@@ -2,7 +2,7 @@ body {
   position: relative;
   margin: 0;
 }
-.tan-tips {
+.tantip {
   position: fixed;
   height: 340px;
   top: calc(50% - 340px/2);
@@ -11,13 +11,13 @@ body {
   z-index: 9999;
   cursor: pointer;
 }
-.tan-tips .tan-tips-show-btn {
+.tantip .tantip-show-btn {
   width: 50px;
   height: calc(340px / 2.7);
   margin-top: calc(340px/2 - calc(340px / 2.7)/2);
   background: purple;
 }
-.tan-tips .tan-tips-main {
+.tantip .tantip-main {
   width: 250px;
   height: 340px;
   background: #fff;
@@ -25,34 +25,34 @@ body {
   display: flex;
   flex-direction: column;
 }
-.tan-tips .tan-tips-main .tan-tips-main-header {
+.tantip .tantip-main .tantip-main-header {
   overflow: hidden;
   height: 25px;
   background: #e7e7e7;
 }
-.tan-tips .tan-tips-main .tan-tips-main-header p {
+.tantip .tantip-main .tantip-main-header p {
   line-height: 25px;
   text-align: center;
   margin: 0;
   padding: 0;
   font-size: 15px;
 }
-.tan-tips .tan-tips-main .tan-tips-main-footer {
+.tantip .tantip-main .tantip-main-footer {
   overflow: hidden;
   height: 20px;
   background: #e7e7e7;
   padding-right: 12px;
 }
-.tan-tips .tan-tips-main .tan-tips-main-footer p {
+.tantip .tantip-main .tantip-main-footer p {
   line-height: 20px;
   text-align: right;
   margin: 0;
   padding: 0;
   font-size: 13px;
 }
-.tan-tips .tan-tips-main .tan-tips-main-footer p a {
+.tantip .tantip-main .tantip-main-footer p a {
   text-decoration: none;
 }
-.tan-tips .tan-tips-main .tan-tips-main-content {
+.tantip .tantip-main .tantip-main-content {
   flex: 1;
 }
