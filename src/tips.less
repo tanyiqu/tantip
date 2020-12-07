@@ -7,9 +7,8 @@ body {
 @tipsMainWeight: 250px;
 @tipsMainHeight: 340px;
 
-@tipsBtnWeight: 50px;
-@tipsBtnHeight: calc(@tipsMainHeight / 2.7);
-
+@tipsBtnWeight: 45px;
+@tipsBtnHeight: calc(@tipsMainHeight / 3);
 
 
 .tantip {
@@ -26,12 +25,24 @@ body {
 
     cursor: pointer;
 
+    .tantip-hline {
+        width: 100%;
+        height: 1px;
+        background: #cccccc;
+    }
+
+    .tantip-vline {
+        height: 100%;
+        width: 1px;
+        background: #cccccc;
+    }
+
     .tantip-show-btn {
         width: @tipsBtnWeight;
         height: @tipsBtnHeight;
-        margin: 0;
-        padding: 0;
-        margin-top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2);
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2) !important;
         background: purple;
     }
 
@@ -39,8 +50,8 @@ body {
         // display: none;
         width: @tipsMainWeight;
         height: @tipsMainHeight;
-        margin: 0;
-        padding: 0;
+        margin: 0 !important;
+        padding: 0 !important;
         background: #fff;
         border: solid 1px #dbdbdb;
         display: flex;
@@ -50,16 +61,16 @@ body {
         .tantip-main-header {
             overflow: hidden;
             height: 25px;
-            margin: 0;
-            padding: 0;
+            margin: 0 !important;
+            padding: 0 !important;
 
             background: #e7e7e7;
 
             p {
                 line-height: 25px;
                 text-align: center;
-                margin: 0;
-                padding: 0;
+                margin: 0 !important;
+                padding: 0 !important;
                 font-size: 15px;
             }
         }
@@ -67,17 +78,17 @@ body {
         .tantip-main-footer {
             overflow: hidden;
             height: 20px;
-            margin: 0;
-            padding: 0;
+            margin: 0 !important;
+            padding: 0 !important;
 
             background: #e7e7e7;
-            padding-right: 12px;
+            padding-right: 12px !important;
 
             p {
                 line-height: 20px;
                 text-align: right;
-                margin: 0;
-                padding: 0;
+                margin: 0 !important;
+                padding: 0 !important;
                 font-size: 13px;
 
                 a {
@@ -88,8 +99,50 @@ body {
 
         .tantip-main-content {
             flex: 1;
-            margin: 0;
-            padding: 0;
+            margin: 0 !important;
+            padding: 0 !important;
+            // background: pink;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            // 放二维码的div
+            .tantip-img-div {
+                margin: 0 !important;
+                padding: 0 !important;
+                background: url(imgs/alipay-frame.png) no-repeat center;
+                background-size: 60%;
+                width: 100%;
+                flex: 1;
+
+                .tantip-img-frame {
+                    width: 123px;
+                    height: 123px;
+                    margin-top: 85px !important;
+                    margin-left: 63px !important;
+                }
+
+            }
+
+
+            // 切换打赏图片
+            .tantip-chimg {
+                width: 100%;
+                height: 48px;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: #eeeeee;
+                display: flex;
+
+                // 切换按钮
+                .tantip-chimg-item {
+                    flex: 1;
+
+                    &:hover {
+                        background: khaki;
+                    }
+                }
+            }
 
         }
 

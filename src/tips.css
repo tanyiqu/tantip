@@ -13,19 +13,29 @@ body {
   z-index: 9999;
   cursor: pointer;
 }
+.tantip .tantip-hline {
+  width: 100%;
+  height: 1px;
+  background: #cccccc;
+}
+.tantip .tantip-vline {
+  height: 100%;
+  width: 1px;
+  background: #cccccc;
+}
 .tantip .tantip-show-btn {
-  width: 50px;
-  height: calc(340px / 2.7);
-  margin: 0;
-  padding: 0;
-  margin-top: calc(340px/2 - calc(340px / 2.7)/2);
+  width: 45px;
+  height: calc(340px / 3);
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: calc(340px/2 - calc(340px / 3)/2) !important;
   background: purple;
 }
 .tantip .tantip-main {
   width: 250px;
   height: 340px;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   background: #fff;
   border: solid 1px #dbdbdb;
   display: flex;
@@ -34,30 +44,30 @@ body {
 .tantip .tantip-main .tantip-main-header {
   overflow: hidden;
   height: 25px;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   background: #e7e7e7;
 }
 .tantip .tantip-main .tantip-main-header p {
   line-height: 25px;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   font-size: 15px;
 }
 .tantip .tantip-main .tantip-main-footer {
   overflow: hidden;
   height: 20px;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   background: #e7e7e7;
-  padding-right: 12px;
+  padding-right: 12px !important;
 }
 .tantip .tantip-main .tantip-main-footer p {
   line-height: 20px;
   text-align: right;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   font-size: 13px;
 }
 .tantip .tantip-main .tantip-main-footer p a {
@@ -65,6 +75,37 @@ body {
 }
 .tantip .tantip-main .tantip-main-content {
   flex: 1;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tantip .tantip-main .tantip-main-content .tantip-img-div {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url(imgs/alipay-frame.png) no-repeat center;
+  background-size: 60%;
+  width: 100%;
+  flex: 1;
+}
+.tantip .tantip-main .tantip-main-content .tantip-img-div .tantip-img-frame {
+  width: 123px;
+  height: 123px;
+  margin-top: 85px !important;
+  margin-left: 63px !important;
+}
+.tantip .tantip-main .tantip-main-content .tantip-chimg {
+  width: 100%;
+  height: 48px;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #eeeeee;
+  display: flex;
+}
+.tantip .tantip-main .tantip-main-content .tantip-chimg .tantip-chimg-item {
+  flex: 1;
+}
+.tantip .tantip-main .tantip-main-content .tantip-chimg .tantip-chimg-item:hover {
+  background: khaki;
 }
