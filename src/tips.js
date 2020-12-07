@@ -79,19 +79,19 @@ let tantipImgFrame = $('.tantip-img-frame');
 $('.tantip-alipay').hover(() => {
     // 切换背景
     tantipImgDiv.css({
-        'background': 'url(imgs/alipay-frame.png) no-repeat center',
+        'background': 'url(https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/alipay-frame.png) no-repeat center',
         'background-size': '60%'
     });
     // 切换图片
-    tantipImgFrame.attr('src', 'imgs/ali.png');
+    tantipImgFrame.attr('src', 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/ali.png');
 });
 
 $('.tantip-wechat').hover(() => {
     // 切换背景
     tantipImgDiv.css({
-        'background': 'url(imgs/wechat-frame.png) no-repeat center',
+        'background': 'url(https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/wechat-frame.png) no-repeat center',
         'background-size': '60%'
     });
     // 切换图片
-    tantipImgFrame.attr('src', 'imgs/we.png');
+    tantipImgFrame.attr('src', 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/we.png');
 });
