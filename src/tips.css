@@ -105,7 +105,14 @@ body {
 }
 .tantip .tantip-main .tantip-main-content .tantip-chimg .tantip-chimg-item {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tantip .tantip-main .tantip-main-content .tantip-chimg .tantip-chimg-item .tantip-chimg-item-img {
+  width: 70%;
+  height: 70%;
 }
 .tantip .tantip-main .tantip-main-content .tantip-chimg .tantip-chimg-item:hover {
-  background: khaki;
+  background: #ffffff;
 }
