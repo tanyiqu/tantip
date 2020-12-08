@@ -1,5 +1,5 @@
 body {
-  position: relative;
+  position: relative !important;
   margin: 0;
 }
 .tantip {
