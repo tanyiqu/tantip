@@ -25,11 +25,13 @@ body {
 }
 .tantip .tantip-show-btn {
   width: 45px;
-  height: calc(340px / 3);
+  height: calc(340px / 3.2);
   margin: 0 !important;
   padding: 0 !important;
-  margin-top: calc(340px/2 - calc(340px / 3)/2) !important;
+  margin-top: calc(340px/2 - calc(340px / 3.2)/2) !important;
   background: purple;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .tantip .tantip-main {
   width: 250px;
@@ -110,8 +112,7 @@ body {
   align-items: center;
 }
 .tantip .tantip-main .tantip-main-content .tantip-chimg .tantip-chimg-item .tantip-chimg-item-img {
-  width: 70%;
-  height: 70%;
+  width: 65%;
 }
 .tantip .tantip-main .tantip-main-content .tantip-chimg .tantip-chimg-item:hover {
   background: #ffffff;

@@ -8,7 +8,7 @@ body {
 @tipsMainHeight: 340px;
 
 @tipsBtnWeight: 45px;
-@tipsBtnHeight: calc(@tipsMainHeight / 3);
+@tipsBtnHeight: calc(@tipsMainHeight / 3.2);
 
 
 .tantip {
@@ -25,18 +25,21 @@ body {
 
     cursor: pointer;
 
+    // 水平线
     .tantip-hline {
         width: 100%;
         height: 1px;
         background: #cccccc;
     }
 
+    // 垂直线
     .tantip-vline {
         height: 100%;
         width: 1px;
         background: #cccccc;
     }
 
+    // 按钮
     .tantip-show-btn {
         width: @tipsBtnWeight;
         height: @tipsBtnHeight;
@@ -44,6 +47,8 @@ body {
         padding: 0 !important;
         margin-top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2) !important;
         background: purple;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .tantip-main {
@@ -142,8 +147,7 @@ body {
                     align-items: center;
 
                     .tantip-chimg-item-img {
-                        width: 70%;
-                        height: 70%;
+                        width: 65%;
                     }
 
                     &:hover {
