@@ -34,8 +34,6 @@ body {
   width: 250px;
   height: 340px;
   background: #fff;
-  display: flex;
-  flex-direction: column;
   border: solid 1px #dbdbdb;
 }
 #tantip #tantip-main #tantip-main-header {
@@ -50,7 +48,7 @@ body {
 }
 #tantip #tantip-main #tantip-main-content {
   width: 100%;
-  flex: 1;
+  height: calc(340px - 50px);
   display: flex;
   flex-direction: column;
   align-items: center;

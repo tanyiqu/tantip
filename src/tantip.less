@@ -47,8 +47,6 @@ body {
         width: @tipsMainWeight;
         height: @tipsMainHeight;
         background: #fff;
-        display: flex;
-        flex-direction: column;
         border: solid 1px #dbdbdb;
 
         // 上边
@@ -69,10 +67,11 @@ body {
         // 中间
         #tantip-main-content {
             width: 100%;
-            flex: 1;
+            height: calc(@tipsMainHeight - 50px);
             display: flex;
             flex-direction: column;
             align-items: center;
+
 
             // 放置二维码边框
             #tantip-main-content-img-div {
