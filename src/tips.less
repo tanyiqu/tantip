@@ -46,9 +46,20 @@ body {
         margin: 0 !important;
         padding: 0 !important;
         margin-top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2) !important;
-        background: purple;
+        background: rgba(33, 117, 188, .9);
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .tantip-show-btn-div {
+            .tantip-main-header-p {
+                color: #fff;
+                font-size: 21px;
+            }
+        }
     }
 
     .tantip-main {

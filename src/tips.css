@@ -29,9 +29,16 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   margin-top: calc(340px/2 - calc(340px / 3.2)/2) !important;
-  background: purple;
+  background: rgba(33, 117, 188, 0.9);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tantip .tantip-show-btn .tantip-show-btn-div .tantip-main-header-p {
+  color: #fff;
+  font-size: 21px;
 }
 .tantip .tantip-main {
   width: 250px;
