@@ -4,6 +4,7 @@
 @tipsBtnWeight: 45px;
 @tipsBtnHeight: calc(@tipsMainHeight / 3.2);
 
+@alipay_frame_url : 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/alipay-frame.png';
 
 body {
     position: relative !important;
@@ -77,7 +78,7 @@ body {
             #tantip-main-content-img-div {
                 width: 100%;
                 flex: 1;
-                background: url(https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/alipay-frame.png) no-repeat center;
+                background: url(@alipay_frame_url) no-repeat center;
                 background-size: 60%;
 
                 #tantip-img-frame {
@@ -113,9 +114,6 @@ body {
                 }
             }
         }
-
-
-
     }
 
     // 下边
