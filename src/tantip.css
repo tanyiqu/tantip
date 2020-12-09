@@ -1,0 +1,37 @@
+body {
+  position: relative !important;
+  margin: 0;
+}
+#tantip {
+  position: fixed;
+  top: calc(50% - 340px/2);
+  right: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  cursor: pointer;
+}
+#tantip #tantip-btn {
+  width: 45px;
+  height: calc(340px / 3.2);
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: -22.5px !important;
+  margin-top: calc(340px/2 - calc(340px / 3.2)/2) !important;
+  background: rgba(33, 117, 188, 0.9);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#tantip #tantip-btn .tantip-btn-p {
+  color: #fff;
+  font-size: 21px;
+}
+#tantip #tantip-main {
+  width: 250px;
+  height: 340px;
+  background: palegoldenrod;
+}

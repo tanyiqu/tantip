@@ -1,0 +1,53 @@
+@tipsMainWeight: 250px;
+@tipsMainHeight: 340px;
+
+@tipsBtnWeight: 45px;
+@tipsBtnHeight: calc(@tipsMainHeight / 3.2);
+
+
+body {
+    position: relative !important;
+    margin: 0;
+}
+
+
+#tantip {
+    position: fixed;
+    top: calc(50% - @tipsMainHeight/2);
+    right: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    cursor: pointer;
+
+    // 按钮
+    #tantip-btn {
+        width: @tipsBtnWeight;
+        height: @tipsBtnHeight;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: -(@tipsBtnWeight/2) !important;
+        margin-top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2) !important;
+        background: rgba(33, 117, 188, .9);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tantip-btn-p {
+            color: #fff;
+            font-size: 21px;
+        }
+    }
+
+    // 右侧隐藏
+    #tantip-main {
+        // display: none;
+        width: @tipsMainWeight;
+        height: @tipsMainHeight;
+        background: palegoldenrod;
+    }
+
+}

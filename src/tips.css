@@ -4,6 +4,7 @@ body {
 }
 .tantip {
   position: fixed;
+  width: 250px;
   height: 340px;
   margin: 0;
   padding: 0;
@@ -13,22 +14,9 @@ body {
   z-index: 9999;
   cursor: pointer;
 }
-.tantip .tantip-hline {
-  width: 100%;
-  height: 1px;
-  background: #cccccc;
-}
-.tantip .tantip-vline {
-  height: 100%;
-  width: 1px;
-  background: #cccccc;
-}
 .tantip .tantip-show-btn {
   width: 45px;
   height: calc(340px / 3.2);
-  margin: 0 !important;
-  padding: 0 !important;
-  margin-top: calc(340px/2 - calc(340px / 3.2)/2) !important;
   background: rgba(33, 117, 188, 0.9);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -41,6 +29,7 @@ body {
   font-size: 21px;
 }
 .tantip .tantip-main {
+  display: none;
   width: 250px;
   height: 340px;
   margin: 0 !important;
