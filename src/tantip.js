@@ -5,6 +5,7 @@ const wechat_frame_url = 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/wecha
 const alipay_text_utl = 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/alipay-text.png';
 const wechat_text_utl = 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/wechat-text.png';
 
+const tantip_css = 'https://tanyiqu.gitee.io/tantip-cnblogs/dist/1.0/tantip.css';
 
 
 const tantip_html = `
@@ -103,8 +104,7 @@ class Tantip {
         // 追加样式
         let style = document.createElement('link');
         style.rel = 'stylesheet';
-        // style.href = 'https://blog-static.cnblogs.com/files/tanyiqu/tantip_1.0.css';
-        style.href = 'tantip.css';
+        style.href = tantip_css;
         document.body.appendChild(style);
 
         // 挂载到body里面
