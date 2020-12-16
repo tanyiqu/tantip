@@ -27,14 +27,20 @@ body {
   align-items: center;
 }
 #tantip #tantip-btn .tantip-btn-p {
+  height: 32px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
   color: #fff;
-  font-size: 21px;
+  font-size: 21px !important;
 }
 #tantip #tantip-main {
   width: 250px;
   height: 340px;
   background: #fff;
   border: solid 1px #dbdbdb;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 #tantip #tantip-main #tantip-main-header {
   width: 100%;
@@ -92,7 +98,7 @@ body {
   line-height: 25px;
   text-align: right;
   font-size: 15px;
-  margin-right: 10px !important;
+  margin-top: 0;
 }
 #tantip #tantip-main-footer .tantip-main-p .tantip-main-p-a:hover {
   color: #000;
