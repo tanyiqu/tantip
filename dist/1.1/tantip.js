@@ -5,10 +5,10 @@ const wechat_frame_url = 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/wecha
 const alipay_text_utl = 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/alipay-text.png';
 const wechat_text_utl = 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/wechat-text.png';
 
-const tantip_css = './tantip-skin01.css';
+const tantip_css = 'https://tanyiqu.gitee.io/tantip-cnblogs/dist/1.1/tantip.css';
 
 const tantip_html = `
-<div id="tantip-skin01">
+<div id="tantip">
     <div class="tantip-btn">
     </div>
 
@@ -58,7 +58,7 @@ class Tantip {
      * 加载tantip的事件
      */
     loadEvent() {
-        let tantip = document.querySelector('#tantip-skin01');
+        let tantip = document.querySelector('#tantip');
         let tantip_main = document.querySelector('.tantip-main');
         // 鼠标移入移除事件
         {

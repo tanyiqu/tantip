@@ -4,86 +4,107 @@
 @tipsBtnWeight: 45px;
 @tipsBtnHeight: calc(@tipsMainHeight / 3.2);
 
+
 @alipay_frame_url : 'https://tanyiqu.gitee.io/tantip-cnblogs/src/imgs/alipay-frame.png';
 
 body {
-    position: relative !important;
-    margin: 0;
+    position: relative;
 }
 
 
+
+// 默认皮肤
 #tantip {
     position: fixed;
+
     top: calc(50% - @tipsMainHeight/2);
     right: 0;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex;
     cursor: pointer;
 
-    // 按钮
-    #tantip-btn {
+    // 不让全局的样式干扰里面
+    div,
+    p,
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .tantip-btn {
+        position: absolute;
         width: @tipsBtnWeight;
         height: @tipsBtnHeight;
-        margin: 0 !important;
-        padding: 0 !important;
-        margin-left: -(@tipsBtnWeight/2) !important;
-        margin-top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2) !important;
+
+        top: calc(@tipsMainHeight/2 - @tipsBtnHeight/2);
+        left: -@tipsBtnWeight;
+
         background: rgba(33, 117, 188, .9);
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .tantip-btn-p {
+        p {
             height: 32px;
             line-height: 32px;
             margin: 0;
             padding: 0;
             color: #fff;
-            font-size: 21px !important;
+            font-size: 21px;
         }
     }
 
-    // 右侧窗口
-    #tantip-main {
-        // position: absolute;
-        // top: 0;
+    .tantip-main {
+        display: none;
         width: @tipsMainWeight;
         height: @tipsMainHeight;
         background: #fff;
         border: solid 1px #dbdbdb;
-        padding-top: 0 !important;
-        margin-top: 0 !important;
 
-        // 上边
-        #tantip-main-header {
+        p {
+            line-height: 25px;
+            font-size: 15px;
+        }
+
+        .tantip-main-header {
             width: 100%;
             height: 25px;
             background: #e7e7e7;
 
-            // 小字
-            .tantip-main-p {
-                line-height: 25px;
+            p {
                 text-align: center;
-                font-size: 15px;
             }
-
         }
 
-        // 中间
-        #tantip-main-content {
+        .tantip-main-footer {
+            width: 100%;
+            height: 25px;
+            background: #e7e7e7;
+
+            p {
+                text-align: right;
+
+                a {
+                    text-decoration: none;
+                    color: #009fe9;
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .tantip-main-content {
             width: 100%;
             height: calc(@tipsMainHeight - 50px);
+            background: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
 
-
             // 放置二维码边框
-            #tantip-main-content-img-div {
+            #qr-frame {
                 width: 100%;
                 flex: 1;
                 background: url(@alipay_frame_url) no-repeat center;
@@ -97,7 +118,7 @@ body {
             }
 
             // 切换二维码
-            #tantip-main-content-chimg {
+            #change-qr {
                 width: 100%;
                 height: 48px;
 
@@ -105,14 +126,14 @@ body {
 
                 display: flex;
 
-                .tantip-main-content-chimg-item {
+                .qr-item {
                     flex: 1;
                     height: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    .tantip-chimg-item-img {
+                    .qr-item-img {
                         width: 65%;
                     }
 
@@ -123,27 +144,4 @@ body {
             }
         }
     }
-
-    // 下边
-    #tantip-main-footer {
-        width: 100%;
-        height: 25px;
-        background: #e7e7e7;
-
-        // 小字
-        .tantip-main-p {
-            line-height: 25px;
-            text-align: right;
-            font-size: 15px;
-            margin-top: 0;
-            // margin-right:  10px !important;
-
-            .tantip-main-p-a {
-                &:hover {
-                    color: #000;
-                }
-            }
-        }
-    }
-
 }
