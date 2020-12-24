@@ -22,7 +22,7 @@
 在**博客侧边栏公告**里加上如下代码：
 
 ```html
-<script src="https://tanyiqu.gitee.io/tantip-cnblogs/dist/1.1/tantip.js"></script>
+<script src="https://tanyiqu.gitee.io/tantip-cnblogs/dist/1.2/tantip.js"></script>
 
 <script>
     tantip_config.title = '打赏';
@@ -37,11 +37,17 @@
 
 ## 更新日志
 
+### 2020.12.24 v1.2
+
+- 将图片替换为矢量图，避免缩放影响图片观看效果
+
+<br>
+
 ### 2020.12.16 v1.1
 
 - 适配所有css模板
 
-
+<br>
 
 ### 2020-12-09 v1.0
 
